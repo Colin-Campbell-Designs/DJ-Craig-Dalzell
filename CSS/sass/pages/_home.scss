@@ -1,0 +1,69 @@
+.footer {
+    background-image: linear-gradient(to left, #2B2C42, #000000);
+    color: $color-white;
+    padding: 5em;
+
+    &__container {
+        max-width: 120em;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    &__contact {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+
+        .footer__header {
+            font-size: 2rem;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+        }
+    }
+
+    &__audo-social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__audiolevel {
+        text-align: right;
+    }
+
+    &__audiolevel-img {
+        max-width: 80%;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1em;
+        
+    }
+
+    &__icon {
+        font-size: 3.5rem;
+        margin: .25em;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        margin: 0.5em 0;
+    }
+
+    &__text-container {
+        max-width: 80%;
+    }
+
+    a {
+        color: $color-white;
+
+    }
+}
+

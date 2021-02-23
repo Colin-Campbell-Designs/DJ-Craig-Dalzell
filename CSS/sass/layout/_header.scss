@@ -1,0 +1,42 @@
+.header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left, 
+    $color-teritary,
+    $color-black);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    &__main {
+        max-width: 150em;
+        margin: 0 auto;
+       display: flex;
+       align-items: center;
+       flex-direction: row;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 100;
+        color: white;
+    }
+
+    &__logoBox {
+        width: 100vw;
+        border: solid white 5px;
+        overflow: visible;
+        margin: 2em;
+    }
+
+
+    &__img {
+        width: 50%;
+        height: 80em;
+        object-fit: contain;
+        overflow: visible;
+        position: absolute;
+        right: 2em;
+    }
+}

@@ -1,0 +1,77 @@
+.main {
+   
+}
+
+.section {
+    max-width: 120em;
+    margin: 10em auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 2rem;
+    padding: 2em;
+    background-color: white;
+    
+    &__head {
+        font-size: 4rem;
+        padding: .2em;
+        text-transform: uppercase;
+        margin-bottom: 1.5em;
+        position: relative;
+        z-index: 10;
+        line-height: 2rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0%;
+            background-color: $color-primary;
+            
+            z-index: -1;
+
+            transition: all .4s;
+        }
+
+        &:hover::after {
+            width: 100%;
+           
+        }
+       
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+       
+    }
+
+    &__profile__container {
+        display: flex;
+        
+    }
+
+    &__profile-pic {
+      max-width: 40em;
+      height: 100%;
+      object-fit: fill;
+      border-radius: 2rem;
+      margin-left: 1.5em;
+    }
+
+    &__profile-text {
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 1.6em;
+      
+        margin: .5em 2em;
+        
+    }
+
+    &__profile__header {
+        width: 80%;
+        margin: .5em 0 .5em .5em;
+
+    }
+
+}
