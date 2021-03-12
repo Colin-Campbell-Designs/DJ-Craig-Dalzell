@@ -40,3 +40,47 @@
         right: 2em;
     }
 }
+
+
+.respon__header__logoBox {
+    border: solid $color-white .75em;
+    .header__primary-heading {
+        font-size: 13rem;
+        line-height: .9;
+    }
+}
+
+@media(max-width: 320px){
+    .header {
+        margin: auto;
+        background-size: contain;
+    }
+    .header__logoBox{
+        margin: 0 1em;
+    }
+    h1.header__primary-heading {
+        font-size: 9.2rem;
+        line-height: .9;
+    }
+
+
+}
+
+@media(max-width: 600px){
+    .respon__header__logoBox {
+        border: solid $color-white .75em;
+        .header__primary-heading {
+            font-size: 10rem;
+            line-height: .9;
+        }
+    }
+}
+
+@media(max-width: 460px){
+    .respon__header__logoBox {
+        border: none;
+        .header__primary-heading {
+            display: none;
+        }
+    }
+}

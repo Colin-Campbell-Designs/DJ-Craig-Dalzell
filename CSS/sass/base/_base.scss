@@ -14,3 +14,10 @@ body {
     box-sizing: border-box;
     background-color: #f2f2f5;
 }
+
+@media (max-width: 900px) {
+    html {
+        font-size: 55%;
+    }
+}
+

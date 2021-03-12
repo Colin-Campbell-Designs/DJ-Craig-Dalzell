@@ -3,18 +3,19 @@
 }
 
 .section {
-    max-width: 120em;
+    max-width: 110em;
     margin: 10em auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 2rem;
     padding: 2em;
     background-color: white;
+    position: relative;
     
     &__head {
         font-size: 4rem;
         padding: .2em;
         text-transform: uppercase;
-        margin-bottom: 1.5em;
+        margin-bottom: 1em;
         position: relative;
         z-index: 10;
         line-height: 2rem;
@@ -34,7 +35,7 @@
         }
 
         &:hover::after {
-            width: 100%;
+            width: 110%;
            
         }
        
@@ -43,12 +44,11 @@
     &__profile {
         display: flex;
         align-items: center;
-       
+        // border: solid red;
     }
 
     &__profile__container {
         display: flex;
-        
     }
 
     &__profile-pic {
@@ -62,16 +62,58 @@
     &__profile-text {
         width: 80%;
         font-size: 1.5rem;
-        line-height: 1.6em;
-      
+        line-height: 1.4em;
         margin: .5em 2em;
+        
         
     }
 
     &__profile__header {
         width: 80%;
         margin: .5em 0 .5em .5em;
+    }
+}
 
+
+
+@media(max-width: 850px){
+    .section__video__container {
+        height: 65em;
+    }
+}
+
+@media(max-width: 450px){
+    .section__video__container {
+        height: 55em;
+    }
+}
+
+@media(max-width: 768px){
+    .section__profile__container {
+        flex-direction: column;
+    }
+    .section__profile-pic {
+       min-width: 80%;
+       height: auto;
+       object-fit: fill;
+       margin: 0;
+    }
+    .section__profile__header {
+        width: 70%;
+        margin: .5em 0;
     }
 
+    .section__profile-text {
+        width: 100%;
+        margin: 0;
+        
+    }
 }
+
+@media(max-width: 320px){
+    .section__profile__container {
+        overflow: scroll;
+    }
+}
+
+

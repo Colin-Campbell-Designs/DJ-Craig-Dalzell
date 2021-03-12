@@ -1,8 +1,11 @@
+
+
 .player {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 .screen {
@@ -57,7 +60,7 @@
 .thumbNails {
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(17em, 20em));
+    grid-template-columns: repeat(auto-fit, minmax(17em, 12.5em));
     align-items: center;
     justify-content: space-evenly;
     max-width: 80%;
@@ -65,6 +68,8 @@
     margin: 5em auto;
     border-radius: 1em;
     // border: solid red;
+    grid-column: 2 / 6;
+    grid-row: 2/3;
 }
 
 .thumbNail-container {
@@ -72,13 +77,45 @@
     align-items: center;
     justify-content: space-between;
    height: 100%;
-    border: solid lightgray
+   position: relative;
+   
 }
+
 
 .thumbNamilScreen {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 1em; 
+    transition: all .5s ease;
+    
+}
+
+.thumbNail-container:hover{
+    cursor: pointer;
+    
+    .thumbnail-play {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+        color: $color-primary;
+        z-index: 5;
+        opacity: 1;
+        transition: .5s ease;
+    }
+}
+
+.thumbnail-play {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: $color-primary;
+    z-index: 10;
+    opacity: 0;
 }
 
 
@@ -88,5 +125,13 @@
     .controls {
         width: 90%;
     }
+    .thumbNails {
+        margin: 2em auto;
+        height: 12em;
+    }
+}
+
+@media(max-width: 1120px) {
+
 }
 

@@ -20,7 +20,6 @@ body {
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-       
     }
 
 }
@@ -36,3 +35,35 @@ body {
     font-size: 1.5rem;
     line-height: 2rem;
 }
+
+.card-text {
+    color: white;
+    text-align: center;
+}
+
+@media(max-width:800px) {
+    .header__primary-heading {
+        font-size: 15rem;
+        line-height: 14rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .header__img {
+        display: none;
+    }
+}
+
+@media(max-width:400px) {
+    .header__primary-heading {
+        font-size: 12rem;
+        line-height: 11rem;
+        background: url(/Images/MainLogo2.jpg);
+       background-position: -30px;
+       display: inline-block;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
+
